@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="login_size">10dp</dimen>
+    <dimen name="login_size_small">15sp</dimen>
+    <dimen name="login_size_normal">20sp</dimen>
+    <dimen name="login_size_big">25sp</dimen>
+    <dimen name="login_size_image">180dp</dimen>
+    <dimen name="login_size_linear">340dp</dimen>
+    <dimen name="botron">100dp</dimen>
+</resources>
