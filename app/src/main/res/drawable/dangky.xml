@@ -5,16 +5,16 @@
 
     <!-- Set màu nền-->
     <solid
-        android:color="@color/colorRed" >
+        android:color="@color/colorGray" >
     </solid>
 
     <!-- đặt thuộc tính màu và độ rộng của đường viền -->
     <stroke
-        android:width="1dp"
+        android:width="3dp"
         android:color="@color/colorDark" >
     </stroke>
 
-    <!-- các thuộc tính căn chỉnh-->
+
     <padding
         android:left="5dp"
         android:top="5dp"
@@ -24,7 +24,8 @@
 
     <!-- và đây là bán kính đường tròn ở 4 góc -->
     <corners
-        android:radius="@dimen/botron" >
+        android:radius="@dimen/botron">
     </corners>
+
 
 </shape>

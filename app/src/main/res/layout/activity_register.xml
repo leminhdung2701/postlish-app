@@ -4,37 +4,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/nameGrayLight"
+    android:background="@color/colorBlue"
     tools:context=".Register">
 
     <ImageView
-        android:id="@+id/register_image"
+        android:id="@+id/image_register"
         android:layout_width="@dimen/login_size_image"
         android:layout_height="@dimen/login_size_image"
-        android:src="@drawable/logo_login"
-
-        android:layout_marginBottom="25dp"
+        android:src="@drawable/book"
+        android:layout_marginTop="@dimen/login_size"
+        android:layout_marginBottom="@dimen/login_size_normal"
         android:layout_centerHorizontal="true"
-        android:layout_above="@id/regis_textView_note"/>
-
-    <TextView
-        android:id="@+id/regis_textView_note"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/regis_note"
-        android:layout_marginBottom="@dimen/login_size_small"
-        android:layout_above="@+id/regis_linear_first"/>
+        android:layout_above="@id/linear_register_first"/>
 
     <LinearLayout
-        android:id="@+id/regis_linear_first"
+        android:id="@+id/linear_register_first"
         android:layout_width="@dimen/login_size_linear"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
         android:orientation="vertical"
         android:layout_centerHorizontal="true">
 
+        <TextView
+            android:id="@+id/textView_register_note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/login_size_normal"
+            android:text="@string/regis_note"/>
+
         <EditText
+            android:id="@+id/edt_textView_Email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/login_size"
@@ -46,6 +46,7 @@
             android:hint="@string/regis_1"/>
 
         <EditText
+            android:id="@+id/edt_textView_Taotk"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/login_size"
@@ -57,6 +58,7 @@
             android:hint="@string/regis_2"/>
 
         <EditText
+            android:id="@+id/edt_textView_Tenht"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/login_size"
@@ -68,6 +70,7 @@
             android:hint="@string/regis_3"/>
 
         <EditText
+            android:id="@+id/edt_textView_Mk"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/login_size"
@@ -79,6 +82,7 @@
             android:hint="@string/regis_4"/>
 
         <EditText
+            android:id="@+id/edt_textView_Nhaplai"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/login_size"
@@ -91,15 +95,30 @@
     </LinearLayout>
 
     <Button
+        android:id="@+id/btn_register_dk"
         android:layout_width="@dimen/login_size_linear"
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/login_size"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="50dp"
         android:layout_marginRight="@dimen/login_size"
         android:textSize="@dimen/login_size_normal"
         android:text="@string/regis_dk"
         android:textAllCaps="false"
+        android:background="@drawable/botron"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/regis_linear_first"/>
+        android:layout_below="@id/linear_register_first"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/login_size"
+        android:layout_marginRight="@dimen/login_size"
+        android:layout_marginBottom="@dimen/login_size_big"
+        android:text="@string/regis_quaylaiDn"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="false"
+        android:textSize="@dimen/login_size_small"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_below="@id/btn_register_dk"/>
 
 </RelativeLayout>

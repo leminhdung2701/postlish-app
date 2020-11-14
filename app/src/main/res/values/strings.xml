@@ -7,6 +7,7 @@
     <string name="login_quenmk">Quên mật khẩu?</string>
     <string name="login_chuatk">Chưa có tài khoản?</string>
     <string name="login_taoTK">Tạo tài khoản</string>
+    <string name="your_string_here">This is an <u>underline</u>.</string>
     
     <string name="regis_note">Tạo tài khoản miễn phí!</string>
     <string name="regis_1">Email</string>
@@ -15,6 +16,7 @@
     <string name="regis_4">Mật khẩu</string>
     <string name="regis_5">Nhập lại mật khẩu</string>
     <string name="regis_dk">Đăng ký</string>
+    <string name="regis_quaylaiDn">Quay lại đăng nhập</string>
 
     <string name="facebook_app_id">2741679302746620</string>
     <string name="fb_login_protocol_scheme">fb2741679302746620</string>
