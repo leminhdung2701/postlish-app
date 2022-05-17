@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.application">
-    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,20 +15,49 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Register"></activity>
-        <activity android:name=".Login" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".function.DksdActivity"></activity>
+        <activity android:name=".function.ChargeActivity" />
+        <activity android:name=".function.FollowersActivity" />
+        <activity android:name=".function.ProfileActivity" />
+        <activity android:name=".function.WigetsActivity" />
+        <activity android:name=".function.LanguageActivity" />
+        <activity android:name=".function.SettingActivity" />
+        <activity android:name=".activity.Categorychose" />
+        <activity android:name=".function.CommentActivity" />
+        <activity android:name=".function.PremiumActivity" />
+        <activity android:name=".function.WritingActivity" />
+        <activity android:name=".function.NotificationActivity" />
+        <activity android:name=".function.LibraryActivity" />
+        <activity android:name=".function.PublishActivity" />
+        <activity android:name=".function.MenuActivity" />
+        <activity android:name=".function.SearchActivity" />
+        <activity android:name=".function.HomeActivity" />
+        <activity android:name=".activity.AddPost" />
+        <activity android:name=".update_account.NameActivity" />
+        <activity android:name=".update_account.SexActivity" />
+        <activity android:name=".update_account.DateActivity" />
+        <activity android:name=".update_account.PasswordActivity" />
+        <activity android:name=".update_account.UserActivity" />
+        <activity android:name=".update_account.IDActivity" />
+        <activity android:name=".activity.AccountActivity" />
+        <activity android:name=".activity.Forget_passwordAcitivy" />
+        <activity android:name=".activity.RegisterActivity" />
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.facebook.FacebookActivity"
-            android:configChanges=
-                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
             android:label="@string/app_name" />
-        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
     </application>
 
 </manifest>

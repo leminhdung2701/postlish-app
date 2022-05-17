@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorBlue"
-    tools:context=".Register">
+    android:background="@color/colorWhite"
+    tools:context=".activity.RegisterActivity">
 
     <ImageView
         android:id="@+id/image_register"
         android:layout_width="@dimen/login_size_image"
-        android:layout_height="@dimen/login_size_image"
-        android:src="@drawable/book"
+        android:layout_height="80dp"
+        android:src="@drawable/postblish"
         android:layout_marginTop="@dimen/login_size"
         android:layout_marginBottom="@dimen/login_size_normal"
         android:layout_centerHorizontal="true"
@@ -34,7 +34,7 @@
             android:text="@string/regis_note"/>
 
         <EditText
-            android:id="@+id/edt_textView_Email"
+            android:id="@+id/edt_register_Email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/login_size"
@@ -42,11 +42,12 @@
             android:layout_marginTop="@dimen/login_size"
             android:layout_marginRight="@dimen/login_size"
             android:paddingLeft="@dimen/login_size"
+            android:singleLine="true"
             android:background="@drawable/botron"
             android:hint="@string/regis_1"/>
 
         <EditText
-            android:id="@+id/edt_textView_Taotk"
+            android:id="@+id/edt_register_Tenht"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/login_size"
@@ -54,54 +55,97 @@
             android:layout_marginTop="@dimen/login_size"
             android:layout_marginRight="@dimen/login_size"
             android:paddingLeft="@dimen/login_size"
+            android:singleLine="true"
             android:background="@drawable/botron"
             android:hint="@string/regis_2"/>
 
-        <EditText
-            android:id="@+id/edt_textView_Tenht"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/login_size"
-            android:layout_marginLeft="@dimen/login_size"
-            android:layout_marginTop="@dimen/login_size"
-            android:layout_marginRight="@dimen/login_size"
-            android:paddingLeft="@dimen/login_size"
-            android:background="@drawable/botron"
-            android:hint="@string/regis_3"/>
 
-        <EditText
-            android:id="@+id/edt_textView_Mk"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/login_size"
-            android:layout_marginLeft="@dimen/login_size"
-            android:layout_marginTop="@dimen/login_size"
-            android:layout_marginRight="@dimen/login_size"
-            android:paddingLeft="@dimen/login_size"
-            android:background="@drawable/botron"
-            android:hint="@string/regis_4"/>
 
-        <EditText
-            android:id="@+id/edt_textView_Nhaplai"
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/login_size"
+            android:layout_height="50dp"
+            app:hintEnabled="false"
+            android:layout_marginBottom="@dimen/login_size"
             android:layout_marginLeft="@dimen/login_size"
-            android:layout_marginTop="@dimen/login_size"
             android:layout_marginRight="@dimen/login_size"
-            android:paddingLeft="@dimen/login_size"
-            android:background="@drawable/botron"
-            android:hint="@string/regis_5"/>
+            >
+
+            <EditText
+                android:id="@+id/edt_register_Ngaysinh"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/botron"
+                android:hint="@string/regis_3"
+                android:singleLine="true"
+                android:inputType="date"
+                android:paddingLeft="@dimen/login_size" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:hintEnabled="false"
+            app:passwordToggleEnabled="true"
+            android:layout_marginBottom="@dimen/login_size"
+            android:layout_marginLeft="@dimen/login_size"
+            android:layout_marginRight="@dimen/login_size"
+            >
+
+            <EditText
+                android:shadowColor="@color/colorGray"
+                android:textColorHighlight="@color/colorGray"
+                android:id="@+id/edt_register_Mk"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:background="@drawable/botron"
+                android:paddingLeft="@dimen/login_size"
+                android:singleLine="true"
+                android:password="true"
+                android:hint="@string/regis_4"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:passwordToggleEnabled="true"
+            app:hintEnabled="false"
+            android:layout_marginBottom="@dimen/login_size"
+            android:layout_marginLeft="@dimen/login_size"
+            android:layout_marginRight="@dimen/login_size"
+            >
+
+            <EditText
+
+                android:textColorHighlight="@color/colorGray"
+                android:id="@+id/edt_register_Nhaplai"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:background="@drawable/botron"
+                android:paddingLeft="@dimen/login_size"
+                android:singleLine="true"
+                android:password="true"
+                android:hint="@string/regis_5"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
     </LinearLayout>
 
     <Button
         android:id="@+id/btn_register_dk"
-        android:layout_width="@dimen/login_size_linear"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/login_size"
         android:layout_marginTop="50dp"
         android:layout_marginRight="@dimen/login_size"
-        android:textSize="@dimen/login_size_normal"
+        android:textSize="@dimen/login_size_small"
         android:text="@string/regis_dk"
         android:textAllCaps="false"
         android:background="@drawable/botron"
@@ -109,6 +153,7 @@
         android:layout_below="@id/linear_register_first"/>
 
     <Button
+        android:id="@+id/btn_register_return"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/login_size"

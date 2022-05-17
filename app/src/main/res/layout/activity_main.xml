@@ -4,17 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/nameGrayLight"
-    tools:context=".MainActivity">
+    tools:context=".activity.MainActivity">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        />
+    /android:src="@drawable/postblish"/>
 
     <TextView
+        android:layout_alignParentEnd="true"
+        android:id="@+id/textview_main"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="500dp"
-        android:background="@color/nameGrayLight"
+        android:layout_marginTop="600dp"
         android:gravity="center"
-        android:text="@string/name_mainactivity"/>
+        android:textColor="@color/colorDark"
+        android:hint="@string/name_mainactivity"/>
 
 
 </RelativeLayout>

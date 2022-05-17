@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".update_account.NameActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linear_name"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/btn_name_back"
+            android:layout_width="100dp"
+            android:drawableLeft="@drawable/left_24"
+            android:text="Trở lại"
+            android:textAllCaps="false"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/colorDark"
+            android:paddingLeft="65dp"
+            android:gravity="center_vertical"
+            android:layout_width="230dp"
+            android:layout_height="match_parent"
+            android:text="Đổi tên hiển thị"/>
+
+        <Button
+            android:textAllCaps="false"
+            android:id="@+id/btn_name_save"
+            android:layout_width="match_parent"
+            android:text="Lưu"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_height="match_parent"/>
+
+
+    </LinearLayout>
+
+    <View
+        android:background="#80CCCCCC"
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"/>
+
+    <TextView
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textSize="10sp"
+        android:text="TÊN HIỂN THỊ"
+        android:paddingLeft="5dp"
+        android:paddingTop="10dp"
+        android:textColor="@color/colorDark"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+
+    <EditText
+        android:id="@+id/edt_name"
+        android:singleLine="true"
+
+        android:paddingTop="10dp"
+        android:textSize="15sp"
+        android:hint="Nhập tên hiển thị mới"
+        android:background="@drawable/vuong"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:paddingLeft="15dp"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+
+</LinearLayout>

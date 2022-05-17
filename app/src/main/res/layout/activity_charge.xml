@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".function.ChargeActivity">
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="270dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_tentk"
+                    android:singleLine="true"
+                    android:textColor="@color/colorDark"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tên tài khoản: Mẫn Tiến Dũng"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteX="0dp" />
+
+                <TextView
+                    android:id="@+id/txt_gmail"
+                    android:singleLine="true"
+                    android:textColor="@color/colorDark"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gmail: trandinhdai_t64@hus.edu.vn"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteX="0dp"/>
+
+                <TextView
+                    android:id="@+id/txt_sodu"
+                    android:singleLine="true"
+                    android:textColor="@color/colorDark"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Số dư tài khoản: n điểm"
+                    />
+
+            </LinearLayout>
+
+            <ImageView
+                android:paddingLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:src="@drawable/postblish"/>
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_marginTop="10dp"
+            android:id="@+id/view_1"
+            android:background="@color/colorGray"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@id/linear_header"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <ScrollView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:drawablePadding="10dp"
+                    android:drawableLeft="@drawable/premium"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:textColor="@color/colorDark"
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hình thức nạp qua thẻ điện thoại"/>
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                <TextView
+                    android:textSize="15sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lựa chọn nhà mạng: "
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="16dp" />
+
+                <LinearLayout
+                    android:layout_marginTop="15dp"
+                    android:weightSum="3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:textSize="12sp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:id="@+id/vina"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="Vinaphone"></CheckBox>
+
+                    <CheckBox
+                        android:textSize="12sp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:id="@+id/viet"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="Vietel"></CheckBox>
+
+                    <CheckBox
+                        android:textSize="12sp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:id="@+id/mobi"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="Mobilephone"></CheckBox>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:weightSum="3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="130dp"
+                        android:layout_height="80dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/vinaphone" />
+
+                    <ImageView
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="130dp"
+                        android:layout_height="80dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/vietel"/>
+
+                    <ImageView
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="130dp"
+                        android:layout_height="80dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/mobifone" />
+                </LinearLayout>
+
+
+
+
+
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lựa chọn mạng giá thẻ: "
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="16dp" />
+
+
+
+                <LinearLayout
+                    android:layout_marginTop="15dp"
+                    android:weightSum="3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:textSize="12sp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:id="@+id/k10"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="10000" />
+
+                    <CheckBox
+                        android:textSize="12sp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:id="@+id/k20"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="20000" />
+
+                    <CheckBox
+                        android:textSize="12sp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:id="@+id/k50"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="50000" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:weightSum="3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="130dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/money10k"></ImageView>
+
+                    <ImageView
+                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="130dp"
+                        android:layout_height="80dp"
+
+                        android:src="@drawable/money20k"></ImageView>
+
+                    <ImageView
+                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="130dp"
+                        android:layout_height="80dp"
+
+                        android:src="@drawable/money50k"></ImageView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:weightSum="3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:textSize="12sp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:id="@+id/k100"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="100000" />
+
+                    <CheckBox
+                        android:textSize="12sp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:id="@+id/k200"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="200000" />
+
+                    <CheckBox
+                        android:textSize="12sp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:id="@+id/k500"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="500000" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="130dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/money100k"></ImageView>
+
+                    <ImageView
+                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="130dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/money200k"></ImageView>
+
+                    <ImageView
+                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="130dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/money500k"></ImageView>
+                </LinearLayout>
+
+                <Button
+                    android:textAllCaps="false"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/accept"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nạp tiền" />
+
+            </LinearLayout>
+
+            <View
+                    android:id="@+id/view_2"
+                    android:background="@color/colorGray"
+                    android:layout_margin="@dimen/menu_margin"
+                    android:layout_below="@id/linear_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+            <TextView
+                    android:drawablePadding="10dp"
+                    android:drawableLeft="@drawable/premium"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:textColor="@color/colorDark"
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="Hình thức nạp qua ví điện tử"/>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

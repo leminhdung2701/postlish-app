@@ -4,175 +4,179 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Login"
-    android:background="@color/colorBlue">
+    tools:context=".activity.LoginActivity">
 
     <ImageView
+        android:layout_marginTop="120dp"
         android:id="@+id/image_login"
         android:layout_width="@dimen/login_size_image"
-        android:layout_height="@dimen/login_size_image"
-        android:src="@drawable/book"
-        android:layout_above="@id/textView_login"
-        android:layout_marginBottom="15dp"
+        android:layout_height="80dp"
+        android:src="@drawable/postblish"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/linear_login_first"
         android:layout_centerHorizontal="true"/>
 
-    <TextView
-        android:id="@+id/textView_login"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@id/linear_login_first"
-        android:text="APPNAME"
-        android:textStyle="bold"
-        android:gravity="center"
-        android:textSize="@dimen/login_size_big"
-        android:textColor="@color/colorWhite"
-        android:layout_marginBottom="@dimen/login_size"/>
-
     <LinearLayout
+
         android:id="@+id/linear_login_first"
         android:layout_width="@dimen/login_size_linear"
         android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
         android:orientation="vertical">
 
-        <EditText
-            android:id="@+id/edt_login_email_sdt"
+
+        <com.google.android.material.textfield.TextInputLayout
+            app:hintTextColor="@color/colorGray"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginBottom="@dimen/login_size"
+            android:layout_marginLeft="@dimen/login_size"
+            android:layout_marginRight="@dimen/login_size"
+            >
+
+            <EditText
+                android:id="@+id/edt_login_email_sdt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/login_email_sdt"
+                android:drawableStart="@drawable/user"
+                android:drawablePadding="@dimen/login_size"
+                android:textColorHint="@color/colorGray"
+                android:singleLine="true"
+                android:paddingLeft="@dimen/login_size"
+                android:textSize="@dimen/login_size_normal"
+                android:background="@drawable/botron"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            app:hintTextColor="@color/colorGray"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:passwordToggleEnabled="true"
+            android:layout_marginBottom="@dimen/login_size"
+            android:layout_marginLeft="@dimen/login_size"
+            android:layout_marginRight="@dimen/login_size"
+            >
+
+            <EditText
+                android:id="@+id/edt_login_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/login_size"
+                android:hint="@string/login_password"
+                android:drawableStart="@drawable/password"
+                android:drawablePadding="@dimen/login_size"
+                android:textColorHint="@color/colorGray"
+                android:password="true"
+                android:singleLine="true"
+                android:textSize="@dimen/login_size_normal"
+                android:background="@drawable/botron"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <Button
+            android:id="@+id/btn_login_dn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
             android:layout_margin="@dimen/login_size"
             android:layout_marginLeft="@dimen/login_size"
-            android:layout_marginTop="@dimen/login_size"
+            android:layout_marginTop="5dp"
             android:layout_marginRight="@dimen/login_size"
-            android:hint="@string/login_email_sdt"
-            android:drawableLeft="@drawable/user"
-            android:drawablePadding="@dimen/login_size"
-            android:textColorHint="@color/colorGray"
-            android:singleLine="true"
-            android:paddingLeft="@dimen/login_size"
-            android:textSize="@dimen/login_size_normal"
-            android:background="@drawable/botron"/>
-
-        <EditText
-            android:id="@+id/edt_login_password"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="@dimen/login_size"
-            android:layout_marginLeft="@dimen/login_size"
-            android:paddingLeft="@dimen/login_size"
-            android:hint="@string/login_password"
-            android:drawableLeft="@drawable/password"
-            android:drawablePadding="@dimen/login_size"
-            android:textColorHint="@color/colorGray"
-            android:password="true"
-            android:singleLine="true"
-            android:textSize="@dimen/login_size_normal"
-            android:background="@drawable/botron"/>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/btn_login_quenmk"
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:layout_weight="1"
-                android:layout_marginRight="@dimen/login_size"
-                android:layout_marginBottom="@dimen/login_size"
-                android:text="@string/login_quenmk"
-                android:textAllCaps="false"
-                android:paddingLeft="0dp"
-                android:background="@color/colorBlue"
-                android:textSize="@dimen/login_size_small"
-                android:textColor="@color/colorDark"
-                android:textStyle="normal"
-                style="?android:attr/borderlessButtonStyle"/>
-
-            <Button
-                android:id="@+id/btn_login_dk"
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:layout_weight="1"
-                android:layout_marginLeft="@dimen/login_size"
-                android:layout_marginBottom="@dimen/login_size"
-                android:text="Đăng ký"
-                android:textAllCaps="false"
-                android:background="@color/colorBlue"
-                android:textSize="@dimen/login_size_small"
-                android:textColor="@color/colorDark"
-                android:textStyle="normal"
-                style="?android:attr/borderlessButtonStyle"/>
-
-        </LinearLayout>
+            android:text="@string/login_dn"
+            android:textSize="15sp"
+            android:background="@drawable/botron"
+            tools:ignore="InvalidId" />
 
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/login_linear_second"
+        android:layout_below="@id/linear_login_first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+
+        <Button
+            android:id="@+id/btn_login_dk"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="@dimen/login_size"
+            android:background="@color/colorWhite"
+            android:paddingLeft="0dp"
+            android:paddingRight="20dp"
+            android:gravity="center"
+            android:text="@string/regis_dk"
+            android:textColor="@color/colorDark"
+            android:textAllCaps="false"
+            android:textSize="@dimen/login_size_small"
+            android:textStyle="normal"
+            style="?android:attr/borderlessButtonStyle"/>
+        <Button
+            android:id="@+id/btn_login_quenmk"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:background="@color/colorWhite"
+            android:layout_marginBottom="@dimen/login_size"
+            android:text="@string/login_quenmk"
+            android:textAllCaps="false"
+            android:paddingLeft="0dp"
+            android:gravity="center"
+            android:paddingRight="10dp"
+            android:textSize="@dimen/login_size_small"
+            android:textColor="@color/colorDark"
+            android:textStyle="normal"
+            style="?android:attr/borderlessButtonStyle"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView_login_split"
+        android:layout_width="match_parent"
+        android:layout_marginTop="60dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textSize="@dimen/login_size_small"
+        android:layout_below="@id/linear_login_first"
+        android:textColor="@color/colorDark"
+        android:text="Hoặc"/>
+
+    <LinearLayout
+        android:id="@+id/login_linear_third"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="100dp"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/linear_login_first"
         android:orientation="vertical"
         >
 
         <com.facebook.login.widget.LoginButton
-            android:id="@+id/login_button"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
+            android:id="@+id/btn_login_byFB"
+            android:layout_width="240dp"
+            android:layout_height="30dp"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="@dimen/login_size"
+
             android:layout_marginBottom="@dimen/login_size" />
 
-        <EditText
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/btn_login_byGoogle"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/login_size"
-            android:paddingLeft="@dimen/login_size"
-            android:background="@color/colorRed"
-            android:text="Đăng nhập bằng Gmail"
-            android:textColor="@color/colorWhite"
-            android:textSize="@dimen/login_size_normal"/>
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal"/>
 
 
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/login_linear_third"
-        android:layout_width="@dimen/login_size_linear"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/login_linear_second"
 
-        android:layout_marginTop="70dp"
-        android:orientation="vertical"
-        android:layout_centerHorizontal="true">
 
-        <TextView
-            android:id="@+id/login_textView_chuaTK"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/login_chuatk"
-            android:textSize="@dimen/login_size_small"
-            android:layout_gravity="center"
-            android:textColor="@color/colorDark"/>
-
-        <Button
-            android:id="@+id/login_btn_taoTK"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/login_size"
-            android:layout_marginRight="@dimen/login_size"
-            android:layout_marginLeft="@dimen/login_size"
-            android:text="@string/login_taoTK"
-            android:textAllCaps="false"
-            android:textColor="@color/colorDark"
-            android:textSize="@dimen/login_size_normal"
-            android:background="@drawable/botron"
-            />
-
-    </LinearLayout>
 
 </RelativeLayout>

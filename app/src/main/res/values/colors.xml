@@ -8,5 +8,6 @@
     <color name="colorDark">#ff000000</color>
     <color name="colorRed">#e40404</color>
     <color name="colorGrayLight">#FFC3C3C3</color>
-    <color name="colorBlue">#51A9FF</color>
+    <color name="colorLogin">#ffffff</color>
+    <color name="colorBule">#4285F4</color>
 </resources>

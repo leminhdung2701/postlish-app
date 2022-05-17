@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/home"
+        android:title="@string/home_action"/>
+    <item
+        android:id="@+id/nav_library"
+        android:icon="@drawable/library"
+        android:title="@string/library_action" />
+
+    <item
+        android:id="@+id/nav_search"
+        android:icon="@drawable/discover"
+        android:title="@string/discover_action"/>
+    <item
+        android:id="@+id/nav_publish"
+        android:icon="@drawable/publish"
+        android:title="@string/publish_action"/>
+    <item
+        android:id="@+id/nav_menu"
+        android:icon="@drawable/menu"
+        android:title="@string/premium_action" />
+</menu>

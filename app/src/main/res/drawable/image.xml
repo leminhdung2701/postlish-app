@@ -5,13 +5,13 @@
 
     <!-- Set màu nền-->
     <solid
-        android:color="@color/nameGrayLight" >
+        android:color="@color/colorGrayLight" >
     </solid>
 
     <!-- đặt thuộc tính màu và độ rộng của đường viền -->
     <stroke
         android:width="3dp"
-        android:color="@color/nameGrayLight" >
+        android:color="@color/colorGrayLight" >
     </stroke>
 
     <!-- các thuộc tính căn chỉnh-->

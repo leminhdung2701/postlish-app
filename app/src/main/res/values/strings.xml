@@ -1,23 +1,91 @@
 <resources>
-    <string name="name_mainactivity">Power by BanTeam</string>
+    <string name="name_mainactivity">Power by BanTeam_K64A3</string>
 
-    <string name="app_name">Application</string>
+    <string name="app_name">Postblish</string>
     <string name="login_email_sdt">Email/Số điện thoại</string>
     <string name="login_password">Mật khẩu</string>
     <string name="login_quenmk">Quên mật khẩu?</string>
     <string name="login_chuatk">Chưa có tài khoản?</string>
     <string name="login_taoTK">Tạo tài khoản</string>
+    <string name="login_dn">Đăng nhập</string>
     <string name="your_string_here">This is an <u>underline</u>.</string>
-    
+
+
     <string name="regis_note">Tạo tài khoản miễn phí!</string>
     <string name="regis_1">Email</string>
-    <string name="regis_2">Tạo tài khoản</string>
-    <string name="regis_3">Tên hiển thị</string>
-    <string name="regis_4">Mật khẩu</string>
+    <string name="regis_2">Tên tài khoản</string>
+    <string name="regis_3">Ngày sinh</string>
+    <string name="regis_4">Nhập mật khẩu</string>
     <string name="regis_5">Nhập lại mật khẩu</string>
     <string name="regis_dk">Đăng ký</string>
     <string name="regis_quaylaiDn">Quay lại đăng nhập</string>
 
-    <string name="facebook_app_id">2741679302746620</string>
-    <string name="fb_login_protocol_scheme">fb2741679302746620</string>
+    <string name="forget">Bạn đã quên mật khẩu?</string>
+    <string name="forget_edt">Nhập email của bạn</string>
+    <string name="forget_btn">Gửi mã!</string>
+
+    <string name="facebook_app_id">2779649598925007</string>
+    <string name="fb_login_protocol_scheme">fb2779649598925007</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="home_fragment">Home fragment</string>
+    <string name="library_fragment">Library fragment</string>
+    <string name="discover_fragment">Discover fragment</string>
+    <string name="publish_fragment">Publish fragment</string>
+    <string name="menu_fragment">Menu fragment</string>
+    <string name="premium_fragment">Premium fragment</string>
+    <string name="search_fragment">Search fragment</string>
+
+    <string name="home_action">Trang chủ</string>
+    <string name="library_action">Thư viện </string>
+    <string name="discover_action">Khám phá</string>
+    <string name="publish_action">Xuất bản </string>
+    <string name="premium_action">Tài khoản </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_publish_main">Publish_mainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <string-array name="category">
+        <item>Chính trị – pháp luật</item>
+        <item>Kinh tế</item>
+        <item>Lí luận, triết học</item>
+        <item>Khoa học công nghệ</item>
+        <item>Văn học nghệ thuật</item>
+        <item>Văn hóa xã hội – Lịch sử</item>
+        <item>Giáo dục</item>
+        <item>Tâm lý , Tâm linh , Tôn giáo</item>
+        <item>Ẩm thực</item>
+        <item>Âm nhạc</item>
+        <item>Y dược</item>
+        <item>Mỹ thuật</item>
+        <item>Nông nghiệp</item>
+    </string-array>
+
+    <string-array name="language">
+        <item>Việt Nam</item>
+        <item>Anh</item>
+        <item>Hoa kỳ</item>
+    </string-array>
+
+    <string-array name="wiget">
+        <item>Sáng</item>
+        <item>Tối</item>
+        <item>Tự động</item>
+    </string-array>
+
+    <string name="follow">theo dõi</string>
+    <string name="following">đã theo dõi</string>
+
 </resources>

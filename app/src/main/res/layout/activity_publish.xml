@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".function.PublishActivity">
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:paddingTop="15dp"
+        android:textColor="@color/colorDark"
+        android:text="Xuất bản"/>
+
+    <View
+        android:id="@+id/view"
+        android:background="@color/colorGray"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_below="@id/textview"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <RelativeLayout
+        android:layout_below="@id/view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_navigation">
+
+        <TextView
+            android:id="@+id/text_cd"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chọn chủ đề: "/>
+
+        <Spinner
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/text_cd"
+            android:layout_marginLeft="2dp"
+            android:id="@+id/spinner"
+            android:layout_width="270dp"
+            android:layout_height="40dp"/>
+
+        <TextView
+            android:layout_below="@id/spinner"
+            android:layout_marginStart="10dp"
+            android:id="@+id/create_post"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="25dp"
+            android:text="Tạo bài viết"
+            android:textColor="#000000"
+            android:textSize="20sp"/>
+
+        <View
+            android:id="@+id/view_"
+            android:background="@color/colorGray"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_below="@id/create_post"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+
+
+        <RelativeLayout
+              android:layout_marginTop="10dp"
+              android:layout_below="@+id/view_"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+
+            <TextView
+                  android:id="@+id/draft"
+                  android:layout_width="150dp"
+                  android:layout_height="50dp"
+                  android:text="Bản nháp"
+                  android:textColor="#000000"
+                  android:textSize="20sp"
+                  android:layout_marginLeft="15dp"
+                  android:layout_marginTop="20dp"/>
+
+
+            <TextView
+                  android:id="@+id/none"
+                  android:layout_width="150dp"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="15dp"
+                  android:layout_marginTop="70dp"
+                  android:text="Chưa có bài viết"
+                  android:textColor="#000000"
+                  android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/xao"
+                android:layout_marginTop="60dp"
+                android:gravity="center_horizontal"
+                android:layout_margin="45dp"
+                android:layout_below="@id/none"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hãy tạo bài viết để chia sẻ điều bạn muốn nói với mọi người! "/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/xao"
+                android:src="@drawable/thanks"/>
+
+
+
+         </RelativeLayout>
+
+    </RelativeLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        app:itemBackground="@color/colorWhite"
+        app:itemTextColor="@color/com_facebook_blue"
+        app:itemIconTint="@color/com_facebook_blue"
+        app:menu="@menu/menu_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

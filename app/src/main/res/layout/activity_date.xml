@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".update_account.DateActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linear_name"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/btn_date_back"
+            android:layout_width="100dp"
+            android:drawableLeft="@drawable/left_24"
+            android:text="Trở lại"
+            android:textAllCaps="false"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/colorDark"
+            android:paddingLeft="100dp"
+            android:gravity="center_vertical"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:text="Thay đổi"/>
+
+        <Button
+            android:textAllCaps="false"
+            android:id="@+id/btn_date_save"
+            android:layout_width="match_parent"
+            android:text="Lưu"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_height="match_parent"/>
+
+
+    </LinearLayout>
+
+    <View
+        android:background="#80CCCCCC"
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"/>
+
+    <TextView
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textSize="10sp"
+        android:text="NGÀY SINH"
+        android:paddingLeft="5dp"
+        android:paddingTop="10dp"
+        android:textColor="@color/colorDark"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+
+    <EditText
+        android:id="@+id/edt_date"
+        android:layout_width="match_parent"
+
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/vuong"
+        android:hint="Nhập ngày sinh"
+        android:inputType="date"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:singleLine="true"
+        android:textSize="15sp" />
+
+</LinearLayout>

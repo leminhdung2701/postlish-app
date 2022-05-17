@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".function.PremiumActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/linear_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/hello"
+            android:textStyle="italic"
+            android:textSize="20sp"
+            android:padding="5dp"
+            android:textColor="@color/colorDark"
+            android:text="Xin chào Chú Đại già!"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:singleLine="true"
+                android:id="@+id/balance"
+                android:textColor="@color/colorDark"
+                android:padding="5dp"
+                android:text="Số dư tài khoản: 5.0000.000 điểm."
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txt_add"
+                android:textAlignment="textEnd"
+                android:paddingRight="20dp"
+                android:drawablePadding="5dp"
+                android:padding="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Nạp tiền"
+                android:drawableRight="@drawable/add"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view"
+        android:background="@color/colorGray"
+        android:layout_margin="@dimen/menu_margin"
+        android:layout_below="@id/linear_header"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <TextView
+        android:layout_below="@id/view"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/textview"
+        android:textColor="@color/colorDark"
+        android:textSize="20sp"
+        android:text="Lên PREMIUM, xem bài viết không giới hạn"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"/>
+
+
+    <ScrollView
+        android:layout_below="@id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+
+            android:id="@id/relative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/relative_1"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:background="@drawable/botron_premium">
+
+                <ImageView
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/right_24"/>
+
+
+                <LinearLayout
+                    android:id="@+id/linear_1"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                    <TextView
+                        android:id="@+id/txt1_1"
+                        android:textSize="15sp"
+                        android:paddingRight="8dp"
+                        android:paddingTop="5dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorDark"
+                        android:text="PREMIUM 12 Tháng"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"/>
+
+                    <TextView
+                        android:id="@+id/txt1_2"
+                        android:textSize="10sp"
+                        android:gravity="center"
+                        android:paddingBottom="3dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:text="Siêu ưu đãi"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorWhite"
+                        android:background="@drawable/botron_premium_text"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txt1_3"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="#EDCCCCCC"
+                    android:layout_below="@id/linear_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="499.000 đ/12 tháng"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative_2"
+                android:layout_below="@id/relative_1"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:background="@drawable/botron_premium">
+
+                <ImageView
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/right_24"/>
+
+
+                <LinearLayout
+                    android:id="@+id/linear_2"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                    <TextView
+                        android:id="@+id/txt2_1"
+                        android:textSize="15sp"
+                        android:paddingRight="8dp"
+                        android:paddingTop="5dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorDark"
+                        android:text="PREMIUM 6 Tháng"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"/>
+
+                    <TextView
+                        android:id="@+id/txt2_2"
+                        android:textSize="10sp"
+                        android:gravity="center"
+                        android:paddingBottom="3dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:text="-21%"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorWhite"
+                        android:background="@drawable/botron_premium_text"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txt2_3"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="#EDCCCCCC"
+                    android:layout_below="@id/linear_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="279.000 đ/6 tháng"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative_3"
+                android:layout_below="@id/relative_2"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:background="@drawable/botron_premium">
+
+                <ImageView
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/right_24"/>
+
+
+                <LinearLayout
+                    android:id="@+id/linear_3"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                    <TextView
+                        android:id="@+id/txt3_1"
+                        android:textSize="15sp"
+                        android:paddingRight="8dp"
+                        android:paddingTop="5dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorDark"
+                        android:text="PREMIUM 1 Tháng"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"/>
+
+                    <TextView
+                        android:id="@+id/txt3_2"
+                        android:textSize="10sp"
+                        android:gravity="center"
+                        android:paddingBottom="3dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:text="Phổ biến"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorWhite"
+                        android:background="@drawable/botron_premium_text"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txt3_3"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="#EDCCCCCC"
+                    android:layout_below="@id/linear_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="49.000 đ/tháng"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative_4"
+                android:layout_below="@id/relative_3"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:background="@drawable/botron_premium">
+
+                <ImageView
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/right_24"/>
+
+
+                <LinearLayout
+                    android:id="@+id/linear_4"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                    <TextView
+                        android:id="@+id/txt4_1"
+                        android:textSize="15sp"
+                        android:paddingRight="8dp"
+                        android:paddingTop="5dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorDark"
+                        android:text="PREMIUM Gia Đình"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"/>
+
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txt4_3"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="#EDCCCCCC"
+                    android:layout_below="@id/linear_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="89.000 đ/tháng"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txt"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phí dịch vụ và sẽ được thanh toán qua Tài khoản iTunes khi xác nhận đăng ký dịch vụ. Thuê bao dịch vụ sẽ được tự động gia hạn trừ khi chế độ tự động gia hạn bị tắt tối thiểu 24 giờ trước khi thời hạn sử dụng dịch vụ chấm dứt. Tài khoản sẽ bị thu phí gia hạn trong 24 giờ trước khi thời hạn dịch vụ kết thúc. Người dùng có thể tắt chế độ tự động gia hạn tại mục cài đặt sau khi mua thành công. Thời gian dùng thử sẽ chấm dứt ngay cả khi người dùng không sử dụng dịch vụ sau khi đăng ký. "/>
+
+        <Button
+            android:id="@+id/đksd"
+            android:textColor="#DDAA00FF"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/txt"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:layout_marginBottom="10dp"
+            android:text="Điều khoản và dich vụ"/>
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

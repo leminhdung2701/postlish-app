@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".function.DksdActivity">
+
+
+
+    <TextView
+        android:id="@+id/txtview"
+        android:textColor="#DDAA00FF"
+        android:textSize="25dp"
+        android:layout_margin="35dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Điều khoản và sử dụng"/>
+    <ScrollView
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/txtview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:text="**Chào mừng bạn đến với ứng dụng Postblish, được sở hữu và điều hành bởi Bần team. ( “Postblish” hoặc “chúng tôi” ). Các điều khoản dịch vụ này (bao gồm Quy tắc Ứng xử và Chính sách Bảo mật của chúng tôi ) ( “Điều khoản Dịch vụ” ) là hợp đồng giữa bạn và Postblish . Bằng cách sử dụng ứng dụng này, tạo tài khoản của bạn và sử dụng ứng dụng di động của chúng tôi để đăng nội dung khác nhau, bao gồm các câu chuyện bạn tạo, tài liệu chia sẻ, nhận xét, hoặc để truy cập và xem nội dung Postblish hoặc nội dung người dùng khác, bạn đồng ý với các Điều khoản Dịch vụ này. Nếu bạn không đồng ý với bất kỳ điều khoản nào trong số này, bạn không thể sử dụng ứng dụng Postblish.
+
+BẠN CẦN 1 TÀI KHOẢN:
+
+Bạn không thể duyệt sử dụng Dịch vụ mà không đăng ký tài khoản. Để tận dụng tối đa nền tảng Postblish, bạn cần đăng ký, chọn tên tài khoản và đặt mật khẩu.
+
+Bạn chịu trách nhiệm cho tất cả hoạt động trên tài khoản của mình và giữ bí mật mật khẩu của bạn. Nếu bạn chia sẻ thông tin tài khoản của mình với bất kỳ ai, người đó có thể kiểm soát được tài khoản và chúng tôi không thể xác định ai là chủ tài khoản thích hợp. Chúng tôi sẽ không có bất kỳ trách nhiệm pháp lý nào đối với bạn (hoặc bất kỳ ai mà bạn chia sẻ thông tin tài khoản của mình) do hành động của bạn hoặc của họ trong những trường hợp đó. Nếu bạn phát hiện ra rằng ai đó đã sử dụng tài khoản của bạn mà không có sự cho phép của bạn, bạn nên báo cáo điều đó tại nhomban.hus@gmail.com
+
+NỘI DUNG CỦA BẠN LÀ CỦA BẠN
+
+Trước khi đăng bất kỳ nội dung nào lên Postblish, điều quan trọng là bạn phải đọc Nguyên tắc nội dung của chúng tôi . Nếu nội dung của bạn không tuân thủ các nguyên tắc này, nội dung đó có thể bị xóa bất kỳ lúc nào.
+
+Bạn sở hữu tất cả các quyền đối với nội dung bạn tạo và đăng trên Postblish. Tất nhiên, nếu nội dung không phải là của bạn để bắt đầu, thì việc đưa nó lên Postblish sẽ không khiến nó trở thành của bạn. Không gửi nội dung mà bạn không giữ bản quyền (trừ khi bạn được phép, bao gồm cả việc cấp cho chúng tôi tất cả các quyền được nêu trong các điều khoản này).
+
+Khi bạn đăng nội dung lên Postblish, chúng tôi cần sự cho phép hợp pháp theo luật bản quyền hiện hành để hiển thị nội dung đó cho người dùng ứng dụng Postblish. Về mặt pháp lý, điều này có nghĩa là bạn cấp cho chúng tôi giấy phép không độc quyền để xuất bản nội dung của bạn trên Postblish, bao gồm bất kỳ thứ gì liên quan hợp lý đến việc xuất bản nội dung đó (như lưu trữ, hiển thị, định dạng lại và phân phối nội dung đó). Bạn sẽ cần quyết định cách bạn muốn cấp phép nội dung câu chuyện của mình cho cộng đồng của chúng tôi. Vui lòng đọc hướng dẫn của chúng tôi về Bản quyền để được hỗ trợ trong việc đưa ra quyết định này
+
+Bạn chịu trách nhiệm về nội dung bạn đăng. Điều này có nghĩa là bạn chịu mọi rủi ro liên quan đến việc xuất bản và hiển thị của nó, bao gồm cả việc người khác tin tưởng vào độ chính xác của nó và bất kỳ khiếu nại nào liên quan đến sở hữu trí tuệ hoặc các quyền hợp pháp khác.
+
+Postblish là một ứng dụng miễn phí và để tiếp tục cung cấp miễn phí, bạn hiểu rằng chúng tôi cho phép quảng cáo trên Dịch vụ, bao gồm cả việc hiển thị nội dung hoặc thông tin khác của bạn. Chúng tôi cũng có thể sử dụng Nội dung của bạn để quảng cáo Dịch vụ. Chúng tôi sẽ không bao giờ bán nội dung của bạn cho các bên thứ ba mà không có sự cho phép rõ ràng của bạn.
+
+Khi sử dụng Dịch vụ, bạn có thể tham gia vào các điều khoản và điều kiện bổ sung và các thỏa thuận khác thay đổi hoặc ghi đè các Điều khoản Dịch vụ này, chẳng hạn như khi bạn tham gia một cuộc thi hoặc tham gia một chương trình đặc biệt của chúng tôi. Trong trường hợp có bất kỳ xung đột hoặc mâu thuẫn nào, các điều khoản và điều kiện của các điều khoản và thỏa thuận bổ sung đó sẽ ghi đè lên Điều khoản dịch vụ này.
+
+QUYỀN CỦA CHÚNG TÔI TRONG DỊCH VỤ
+
+Chúng tôi bảo lưu mọi quyền đối với giao diện của Ứng dụng cũng như trong nội dung của chúng tôi. Bạn không được sao chép hoặc điều chỉnh bất kỳ phần nào của mã hoặc các yếu tố thiết kế trực quan của chúng tôi (bao gồm cả biểu trưng) mà không có sự cho phép rõ ràng bằng văn bản từ Postblish hoặc như được quy định trong điều khoản này. Vui lòng không sử dụng biểu tượng hoặc nhãn hiệu của chúng tôi theo bất kỳ cách nào có thể gợi ý Postblish xác nhận một sản phẩm hoặc dịch vụ cụ thể hoặc bạn có mối quan hệ kinh doanh với Postblish.
+
+Vui lòng không thay đổi, kéo dài, cô đặc, tô điểm, thêm lấp lánh hoặc thay đổi biểu tượng của chúng tôi theo bất kỳ cách nào. Chúng tôi khá tự hào về logo của mình và chúng tôi muốn giữ nguyên biểu tượng của nó. Bạn vẫn không chắc phải làm gì với logo của chúng tôi? Xem toàn bộ Nguyên tắc thương hiệu của chúng tôi .
+
+Postblish có thể thay đổi, chấm dứt hoặc hạn chế quyền truy cập vào bất kỳ khía cạnh nào của Dịch vụ bất kỳ lúc nào mà không cần thông báo. Chúng tôi có thể xóa bất kỳ nội dung nào bạn đăng hoặc gửi vì bất kỳ lý do gì. Postblish có thể truy cập, đọc, lưu giữ và tiết lộ bất kỳ thông tin nào mà chúng tôi tin rằng một cách hợp lý là cần thiết để (i) đáp ứng mọi luật, quy định, quy trình pháp lý hiện hành hoặc yêu cầu của chính phủ, (ii) thực thi Điều khoản Dịch vụ, bao gồm cả việc điều tra các vi phạm tiềm ẩn, (iii) phát hiện, ngăn chặn hoặc giải quyết các vấn đề gian lận, bảo mật hoặc kỹ thuật, (iv) phản hồi các yêu cầu hỗ trợ của người dùng hoặc (v) bảo vệ các quyền, tài sản hoặc sự an toàn của Dịch vụ, người dùng và công chúng.
+
+GIẢI QUYẾT CÁC VẤN ĐỀ BẢN QUYỀN
+
+Postblish đã áp dụng chính sách đối với việc vi phạm bản quyền đối với Ứng dụng theo Luật Sở hữu Trí tuệ 2005, được sửa đổi năm 2009 và hệ thống các văn bản quy phạm pháp luật hướng dẫn bao gồm các Nghị định, Thông tư liên quan. Mặc dù chính sách của chúng tôi dựa trên luật pháp Hoa Kỳ, nhưng chúng tôi áp dụng chính sách này trên toàn cầu cho tất cả các khu vực pháp lý mà Dịch vụ của chúng tôi có sẵn. Nếu bạn muốn gửi khiếu nại về vi phạm bản quyền, vui lòng gửi mail về Báo cáo Vi phạm Bản quyền . Postblish có quyền xóa nội dung bị cáo buộc là vi phạm mà không cần thông báo trước, theo quyết định riêng của chúng tôi và không có trách nhiệm pháp lý đối với bạn hoặc bất kỳ ai khác. Trong những trường hợp thích hợp, chúng tôi cũng sẽ chấm dứt tài khoản của người dùng nếu người dùng được xác định là người tái vi phạm.
+
+Đôi khi chúng tôi bắt gặp các trang web có nội dung được trích xuất bất hợp pháp từ Postblish. Khi chúng tôi tìm thấy những trang web này, chúng tôi sẽ cố gắng hết sức để chúng đóng cửa. Để thay mặt người dùng của mình, chúng tôi cần có sự cho phép hợp pháp của bạn để làm điều đó, vì vậy chúng tôi yêu cầu điều đó ở đây khi bạn đăng ký. Bạn cho phép chúng tôi làm đại lý của bạn để đưa ra các thông báo gỡ xuống để cho phép gửi yêu cầu đến các nhà cung cấp dịch vụ Internet và bất kỳ người nào khác liên quan đến việc đăng bất hợp pháp để xóa nội dung vi phạm hoặc bị cáo buộc tài liệu vi phạm bản quyền có trong hoặc hiển thị trên các nền tảng và / hoặc dịch vụ của nhà cung cấp dịch vụ đó.
+
+NHỮNG ĐIỀU BẠN KHÔNG NÊN LÀM
+
+Hàng triệu người sử dụng nền tảng Postblish. Chúng tôi mong rằng tất cả họ sẽ cư xử có trách nhiệm và giúp giữ cho nơi này luôn tốt đẹp. Vui lòng xem lại Quy tắc ứng xử của Postblish (là một phần của Điều khoản dịch vụ này), được thiết kế để đảm bảo rằng mọi người đều hiểu cộng đồng Postblish là gì và những giá trị mà chúng tôi trân trọng, để tạo ra một môi trường an toàn, vui vẻ và quan tâm đến câu chuyện những người yêu nhau. Không hạn chế nội dung trong Quy tắc ứng xử, không thực hiện bất kỳ điều nào trong số những điều sau trên Dịch vụ:
+
+Đừng phạm luật:
+Không thực hiện bất kỳ hành động nào vi phạm hoặc vi phạm quyền của người khác, vi phạm pháp luật hoặc vi phạm bất kỳ hợp đồng hoặc nghĩa vụ pháp lý nào mà bạn có đối với bất kỳ ai.
+
+Không làm hại thiết bị của bất kỳ ai:
+Không phát tán vi rút phần mềm hoặc bất kỳ thứ gì khác (mã, phim, chương trình) được thiết kế để can thiệp vào chức năng thích hợp của bất kỳ phần mềm, phần cứng hoặc thiết bị nào trên Ứng dụng (cho dù nó thuộc về Postblish hay bất kỳ ai khác).
+
+Đừng thử và làm hỏng hoặc làm gián đoạn Postblish:
+Đừng cố can thiệp vào hoạt động bình thường của Dịch vụ. Không bỏ qua bất kỳ biện pháp nào mà chúng tôi đã áp dụng để đảm bảo Dịch vụ. Không cố gắng làm hỏng hoặc truy cập trái phép vào bất kỳ hệ thống, dữ liệu, mật khẩu hoặc thông tin khác. Không thực hiện bất kỳ hành động nào gây tải trọng bất hợp lý lên cơ sở hạ tầng của chúng tôi hoặc đối với các nhà cung cấp bên thứ ba của chúng tôi. (Chúng tôi xác định điều gì là hợp lý)
+
+Đừng cạo thu thập thông tin:
+Không sử dụng bất kỳ loại phần mềm, thiết bị hoặc phương pháp nào (dù là thủ công hay tự động) để “thu thập thông tin”, “trình thu thập thông tin” hoặc xóa bất kỳ nội dung nào khỏi bất kỳ phần nào của Dịch vụ. Không sử dụng bất kỳ nội dung hoặc Dịch vụ nào có thể có tác dụng cạnh tranh hoặc thay thế thị trường.
+
+Không ăn cắp bất kỳ nội dung nào từ Postblish khi chưa được phép:
+Không thay đổi, dịch, tái sản xuất, phân phối hoặc tạo ra các tác phẩm khác của của bất kỳ nội dung nào trừ khi bạn nhận được sự đồng ý rõ ràng từ tác giả của nội dung đó
+
+Đừng ăn cắp tài sản trí tuệ quý giá của Postblish:
+Không tách rời hoặc thiết kế đối chiếu bất kỳ khía cạnh nào của Dịch vụ nhằm nỗ lực truy cập những thứ như mã nguồn, ý tưởng cơ bản hoặc thuật toán.
+
+XÓA TÀI KHOẢN
+
+Bạn có thể xóa vĩnh viễn tài khoản Postblish của mình. Nếu bạn đóng tài khoản của mình, trước tiên nó sẽ bị vô hiệu hóa và sau đó sẽ bị xóa. Khi tài khoản của bạn bị vô hiệu hóa, mặc dù không thể xem được trên Postblish, tất cả các nhận xét và bài đăng trên bảng tin của bạn lên Postblish sẽ vẫn còn ngoại trừ việc chúng sẽ được ẩn danh.
+
+Chúng tôi có thể tạm ngừng hoặc chấm dứt tài khoản của bạn hoặc ngừng cung cấp cho bạn tất cả hoặc một phần của Dịch vụ bất kỳ lúc nào và vì bất kỳ lý do nào mà chúng tôi cho là thích hợp. Chúng tôi sẽ nỗ lực hợp lý để thông báo cho bạn bằng địa chỉ email được liên kết với tài khoản của bạn hoặc vào lần tiếp theo bạn cố gắng truy cập vào tài khoản của mình.
+
+QUẢNG CÁO TRÊN ỨNG DỤNG
+
+Chúng tôi cung cấp Dịch vụ miễn phí. Để có thể tiếp tục làm như vậy, chúng tôi hiển thị các quảng cáo và khuyến mại của bên thứ ba trên hoặc liên quan đến Dịch vụ. Vì quảng cáo mà chúng tôi cung cấp dựa trên thông tin do bên thứ ba cung cấp, chúng tôi sẽ không chịu trách nhiệm hoặc có nghĩa vụ đối với bất kỳ tổn thất hoặc thiệt hại nào do bạn phát sinh do bất kỳ quảng cáo nào. Tương tác của bạn với các nhà quảng cáo được tìm thấy trên hoặc thông qua Dịch vụ, bao gồm nhưng không giới hạn, tất cả đều phụ thuộc vào quảng cáo, tất cả các giao dịch thương mại và nghĩa vụ pháp lý liên quan đến các quảng cáo đó, chỉ là giữa bạn và các nhà quảng cáo.
+
+
+
+
+
+"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="15dp"/>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+tools:context=".activity.Categorychose"
+android:layout_height="match_parent">
+
+
+<ScrollView
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:layout_editor_absoluteX="81dp"
+    tools:layout_editor_absoluteY="0dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Chọn 3 trong các chủ đề: "
+            android:textSize="17dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <CheckBox
+                android:id="@+id/chose1"
+                android:layout_width="135dp"
+                android:layout_height="50dp"
+                android:text="Chính trị – pháp luật" />
+
+            <CheckBox
+                android:id="@+id/chose2"
+                android:layout_width="135dp"
+                android:layout_height="50dp"
+                android:text="Kinh tế" />
+
+            <CheckBox
+                android:id="@+id/chose3"
+                android:layout_width="135dp"
+                android:layout_height="50dp"
+                android:text="Lí luận, triết học" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="135dp"
+                android:layout_height="130dp"
+                android:baselineAligned="false"
+                android:scaleType="fitXY"
+                android:src="@mipmap/luat" />
+
+            <ImageView
+                android:layout_width="135dp"
+                android:layout_height="130dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/kinhte" />
+
+            <ImageView
+                android:layout_width="135dp"
+                android:layout_height="130dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/triet" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <CheckBox
+                android:id="@+id/chose4"
+                android:layout_width="135dp"
+                android:layout_height="50dp"
+                android:text="Khoa học công nghệ" />
+            <CheckBox
+                android:id="@+id/chose5"
+                android:layout_width="135dp"
+                android:layout_height="50dp"
+                android:text="Văn học nghệ thuật" />
+            <CheckBox
+                android:id="@+id/chose6"
+                android:layout_width="135dp"
+                android:layout_height="50dp"
+                android:text="Văn hóa xã hội – Lịch sử" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="135dp"
+                android:layout_height="130dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/congnghe" />
+            <ImageView
+                android:layout_width="135dp"
+                android:layout_height="130dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/chinhtri" />
+            <ImageView
+                android:layout_width="135dp"
+                android:layout_height="130dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/vanhoa" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <CheckBox
+                android:id="@+id/chose7"
+                android:layout_width="135dp"
+                android:layout_height="50dp"
+                android:text="Giáo dục" />
+            <CheckBox
+                android:id="@+id/chose8"
+                android:layout_width="135dp"
+                android:layout_height="50dp"
+                android:text="Tâm lý , Tâm linh , Tôn giáo" />
+            <CheckBox
+                android:id="@+id/chose9"
+                android:layout_width="135dp"
+                android:layout_height="50dp"
+                android:text="Ẩm thực" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="135dp"
+                android:layout_height="130dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/giaoduc" />
+            <ImageView
+                android:layout_width="135dp"
+                android:layout_height="130dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/tamlinh" />
+            <ImageView
+                android:layout_width="135dp"
+                android:layout_height="130dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/chef" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/chose10"
+                android:layout_width="135dp"
+                android:layout_height="50dp"
+                android:text=" Âm nhạc" />
+            <CheckBox
+                android:id="@+id/chose11"
+                android:layout_width="135dp"
+                android:layout_height="50dp"
+                android:text="Y dược" />
+
+            <CheckBox
+                android:id="@+id/chose12"
+                android:layout_width="135dp"
+                android:layout_height="50dp"
+                android:text="Mỹ thuật" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="135dp"
+                android:layout_height="130dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/amnhac" />
+            <ImageView
+                android:layout_width="135dp"
+                android:layout_height="130dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/yduoc" />
+            <ImageView
+                android:layout_width="135dp"
+                android:layout_height="130dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/art" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <CheckBox
+                android:id="@+id/chose13"
+                android:layout_width="135dp"
+                android:layout_height="50dp"
+                android:text="Nông nghiệp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="135dp"
+                android:layout_height="130dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/nongnghiep" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/accept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xác nhận"
+            android:textSize="15dp" />
+    </LinearLayout>
+</ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
