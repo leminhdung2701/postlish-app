@@ -18,7 +18,7 @@
 ===========================
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/58498756/169003941-5de2406f-6925-402d-9ea5-5f36fa0f9bdd.gif" alt="animated" />
+  <img src="https://user-images.githubusercontent.com/58498756/169003941-5de2406f-6925-402d-9ea5-5f36fa0f9bdd.gif" width="200" height="400" alt="animated" />
 </p>
 
 <a name="1"></a>
